@@ -7,7 +7,7 @@ ADD jdk-6u25-linux-x64.bin /root/jdk-6u25-linux-x64.bin
 RUN DEBIAN_FRONTEND=noninteractive && \
 	chmod +x /*.sh && \
 	apt-get update && \
-	apt-get -y install software-properties-common python-software-properties && \
+	apt-get -y install software-properties-common python-software-properties wget && \
 	locale-gen en_US.UTF-8 && \
 	export LANG=en_US.UTF-8 && \
 	cd root && \
