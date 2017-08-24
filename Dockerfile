@@ -17,7 +17,8 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	chmod +x jdk-6u25-linux-x64.bin && \
 	echo | /root/jdk-6u25-linux-x64.bin	 && \
 	export PATH="/root/jdk1.6.0_25/bin:$PATH" && \
-	export JAVA_HOME=/root/jdk1.6.0_25/ 
+	export JAVA_HOME=/root/jdk1.6.0_25/ && \
+	cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 	
 
 EXPOSE 8080
