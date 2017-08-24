@@ -16,8 +16,8 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	mv jakarta-tomcat-4.1.30 tomcat-4.1.30 && \
 	chmod +x jdk-6u25-linux-x64.bin && \
 	echo | /root/jdk-6u25-linux-x64.bin	 && \
-	export PATH="/root/jdk1.6.0_25/bin:$PATH" && \
-	export JAVA_HOME=/root/jdk1.6.0_25/ && \
+	export PATH="/root/jdk1.6.0_25/bin:$PATH" >> /etc/profile && \
+	export JAVA_HOME=/root/jdk1.6.0_25/ >> /etc/profile && \
 	cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 	
 
