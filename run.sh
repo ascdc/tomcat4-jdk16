@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/root/tomcat/bin/startup.sh
+/root/tomcat-4.1.30/bin/startup.sh
 
 /bin/bash
 
