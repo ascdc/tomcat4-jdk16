@@ -21,5 +21,5 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	
 
 EXPOSE 8080
-WORKDIR /root/tomcat
+WORKDIR /root/tomcat-4.1.30
 ENTRYPOINT ["/run.sh"]
