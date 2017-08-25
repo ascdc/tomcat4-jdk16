@@ -18,7 +18,6 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	chmod +x jdk-6u25-linux-x64.bin && \
 	echo | /root/jdk-6u25-linux-x64.bin	 && \
 	cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime
-
-EXPOSE 8080
+	
 WORKDIR /root/tomcat-4.1.30
 ENTRYPOINT ["/run.sh"]
