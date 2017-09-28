@@ -17,7 +17,7 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	mv jakarta-tomcat-4.1.30 tomcat-4.1.30 && \
 	chmod +x jdk-6u25-linux-x64.bin && \
 	echo | /root/jdk-6u25-linux-x64.bin	 && \
-	cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime	
+	cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 	
 WORKDIR /root/tomcat-4.1.30
 ENTRYPOINT ["/run.sh"]
