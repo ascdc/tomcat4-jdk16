@@ -18,10 +18,7 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	chmod +x jdk-6u25-linux-x64.bin && \
 	echo | /root/jdk-6u25-linux-x64.bin	 && \
 	cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime && \
-	echo "zh_TW.big5 BIG5">>/var/lib/locales/supported.d/local && \
-	locale-gen && \
-	echo "export LANG=zh_TW.big5">>~/.bashrc && \
-	echo "export LC_ALL=zh_TW.big5">>~/.bashrc
+	
 	
 WORKDIR /root/tomcat-4.1.30
 ENTRYPOINT ["/run.sh"]
